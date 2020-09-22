@@ -1,7 +1,11 @@
+
+
 // wow animation
 new WOW({
   offset: 0,
 }).init();
+
+
 // slider
 
 $(document).ready(function () {
@@ -17,17 +21,16 @@ $(document).ready(function () {
       {
         breakpoint: 1200,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           dots: true,
         },
       },
       {
         breakpoint: 700,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           dots: true,
         },
       },
@@ -35,3 +38,13 @@ $(document).ready(function () {
   });
 });
 
+
+// Preloader
+document.body.onload = function() {
+  setTimeout(function() {
+      let preloader = document.getElementById('page-preloader');
+      if (!preloader.classList.contains('done')) {
+        preloader.classList.add('done')
+      }
+  }, 1000);
+}
