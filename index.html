@@ -9,40 +9,51 @@
 	<link
 		href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;700&display=swap"
 		rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="libs/slick-slider/slick.css">
 	<link rel="stylesheet" href="libs/slick-slider/slick-theme.css">
 	<link rel="stylesheet" href="libs/animate.min.css">
-	<link rel="icon" href="img/logo.png">
+	<link rel="icon" href="img/Logo2.png">
 	<title>Document</title>
 </head>
 
 <body>
+	<div id="page-preloader" class="preloader">
+		<div class="loader"></div>
+		<div class="text-loader">
+		Загрузка...
+
+		</div>
+	</div>
+	
 	<header class="header">
 		<div class="container">
-			<div class="header__inner">
-				<div class="header__logo animate__animated wow animate__slideInLeft" data-wow-duration="2s">
-					<img src="img/logo.png" alt="">
+			<div class="header__inner" >
+				<div class="header__logo" data-wow-duration="2s">
+				<a href="index.html">
+					<img src="img/Logo2.png" width="150" height="150" alt="">
+				</a>
 				</div>
-				<nav class="nav animate__animated wow animate__slideInRight" data-wow-duration="1s">
+				<nav class="nav " data-wow-duration="1s">
 					<ul>
-						<a class="nav__link" href="#">
-							<li>About</li>
+						<a class="nav__link" href="#about">
+							<li>О нас</li>
 						</a>
-						<a class="nav__link" href="#">
-							<li>Contact</li>
+						<a class="nav__link" href="#advantages">
+							<li>преимущества</li>
 						</a>
-						<a class="nav__link" href="#">
-							<li>Portfolio</li>
+						<a class="nav__link" href="#works">
+							<li>работы</li>
 						</a>
-						<a class="nav__link" href="#">
-							<li>Team</li>
+						<a class="nav__link" href="#team">
+							<li>команда</li>
 						</a>
-						<a class="nav__link" href="#">
-							<li>Service</li>
+						<a class="nav__link" href="#service">
+							<li>Услуги</li>
 						</a>
-						<a class="nav__link" href="#">
-							<li>Nome</li>
+						<a class="nav__link" href="#contact">
+							<li>Контакты</li>
 						</a>
 					</ul>
 				</nav>
@@ -51,7 +62,7 @@
 					</button>
 				</div>
 			</div>
-			<div class="intro animate__animated wow animate__rotateInDownLeft" data-wow-duration="2s">
+			<div id="intro" class="intro animate__animated wow animate__zoomIn" data-wow-duration="2s">
 				<h1 class="intro__title">
 					Your Favorite One <br> Page Multi Purpose Template
 				</h1>
@@ -59,14 +70,15 @@
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br> Praesent
 					commodo cursus magna vel scelerisque nisl consectetur et.
 				</h2>
-				<a href="#" class="btn">Request an application</a>
+				<a href="#popup__modal__header" class="btn">Оформить заказ</a>
 			</div>
 		</div>
 	</header>
-	<section class="about">
+	
+	<section class="about" id="about">
 		<div class="container">
 			<div class="title animate__animated wow animate__zoomIn">
-				<h2>About</h2>
+				<h2>О нас</h2>
 			</div>
 			<div class="about__inner">
 				<div class="about__text animate__animated wow animate__fadeInLeft " data-wow-duration="2s">
@@ -82,51 +94,31 @@
 				<div class="about__form animate__animated wow animate__fadeInRight" data-wow-duration="2s">
 					<form action="#">
 						<div class="about__form-title">
-							<h2>Send a request</h2>
+							<h2>Отправить заказ</h2>
 						</div>
 						<div class="about__input">
-							<input type="text" placeholder="Your name">
+							<input type="text" placeholder="Ваше Имя">
 						</div>
 						<div class="about__input">
-							<input type="email" placeholder="Your email">
+							<input type="email" placeholder="Ваше email">
 						</div>
 						<div class="about__input">
-							<input type="text" placeholder="Your tel">
+							<input type="text" placeholder="Ваше Телефон номер">
 						</div>
 						<div class="about__btn">
-							<button>Send</button>
+							<button>Отправить</button>
 						</div>
 					</form>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="advantages">
+	<section class="advantages" id="advantages">
 		<div class="container">
 			<div class="title animate__animated wow animate__flipInX" data-wow-duration="2s">
-				<h2>Our advantage</h2>
+				<h2>Наши преимущества</h2>
 			</div>
 			<div class="advantages__inner">
-				<div class="advantages__item animate__animated wow animate__fadeInRight" data-wow-duration="2s">
-					<div class="advantanges__icon">
-						<i class="fa fa-envelope-o"></i>
-					</div>
-					<div class="advantages__text">
-						<h3>Lorem ups</h3>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus ipsum unde enim perferendis
-						ad, corrupti, nobis natus cumque aliquam.
-					</div>
-				</div>
-				<div class="advantages__item animate__animated wow animate__flipInX" data-wow-duration="3s">
-					<div class="advantanges__icon">
-						<i class="fa fa-envelope-o"></i>
-					</div>
-					<div class="advantages__text">
-						<h3>Lorem ups</h3>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus ipsum unde enim perferendis
-						ad, corrupti, nobis natus cumque aliquam.
-					</div>
-				</div>
 				<div class="advantages__item animate__animated wow animate__fadeInLeft" data-wow-duration="2s">
 					<div class="advantanges__icon">
 						<i class="fa fa-envelope-o"></i>
@@ -135,48 +127,69 @@
 						<h3>Lorem ups</h3>
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus ipsum unde enim perferendis
 						ad, corrupti, nobis natus cumque aliquam.
+						</div>
+				</div>
+				<div class="advantages__item animate__animated wow animate__flipInX" data-wow-duration="3s">
+					<div class="advantanges__icon">
+						<i class="fa fa-truck"></i>
+					</div>
+					<div class="advantages__text">
+						<h3>Lorem ups</h3>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus ipsum unde enim perferendis
+						ad, corrupti, nobis natus cumque aliquam.
+					</div>
+				</div>
+				<div class="advantages__item animate__animated wow animate__fadeInRight" data-wow-duration="2s">
+					<div class="advantanges__icon">
+						<i class="fa fa-calculator"></i>
+					</div>
+					<div class="advantages__text">
+						<h3>Lorem ups</h3>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt ducimus ipsum unde enim perferendis
+						ad, corrupti, nobis natus cumque aliquam.
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<section class="works">
+	<section class="works" id="works">
 		<div class="container">
 			<div class="title animate__animated wow animate__swing" data-wow-duration="2s">
-				<h2>Works</h2>
+				<h2>Наши работы</h2>
 			</div>
 			<div class="works__inner">
-				<a href=" #popup__main" class="works__item animate__animated wow animate__zoomInDown product__link"
+
+				<a href=" #popup__main" class="works__item animate__animated wow animate__slideInDown product__link"
 					data-wow-duration="2s">
 					<img src="img/foto.jpg" alt="" style="max-width:100%">
 				</a>
-				<a href=" #popup__main" class="works__item animate__animated wow animate__zoomInDown product__link"
+				<a href=" #popup__main" class="works__item animate__animated wow animate__slideInDown product__link"
 					data-wow-duration="2s">
 					<img src="img/foto.jpg" alt="" style="max-width:100%">
 				</a>
-				<a href=" #popup__main" class="works__item animate__animated wow animate__zoomInDown product__link"
+				<a href=" #popup__main" class="works__item animate__animated wow animate__slideInDown product__link"
 					data-wow-duration="2s">
 					<img src="img/foto.jpg" alt="" style="max-width:100%">
 				</a>
-				<a href=" #popup__main" class="works__item animate__animated wow animate__zoomInDown product__link"
+				<a href=" #popup__main" class="works__item animate__animated wow animate__slideInUp product__link"
 					data-wow-duration="2s">
 					<img src="img/foto.jpg" alt="" style="max-width:100%">
 				</a>
-				<a href=" #popup__main" class="works__item animate__animated wow animate__zoomInDown product__link"
+				<a href=" #popup__main" class="works__item animate__animated wow animate__slideInUp product__link"
 					data-wow-duration="2s">
 					<img src="img/foto.jpg" alt="" style="max-width:100%">
 				</a>
-				<a href=" #popup__main" class="works__item animate__animated wow animate__zoomInDown product__link"
+				<a href=" #popup__main" class="works__item animate__animated wow animate__slideInUp product__link"
 					data-wow-duration="2s">
 					<img src="img/foto.jpg" alt="" style="max-width:100%">
 				</a>
 			</div>
 		</div>
 	</section>
-	<section class="team">
+	<section class="team" id="team">
 		<div class="container">
 			<div class="title">
-				<h2>Our team</h2>
+				<h2>Наша команда</h2>
 			</div>
 			<div class="team__inner animate__animated wow animate__zoomIn" data-wow-duration="2s">
 				<div class="team__item">
@@ -272,9 +285,9 @@
 					</div>
 				</div>
 				<div class="btn-request">
-					<button>
-						Оставить заявку
-					</button>
+					<a href="#popup__modal__team"><button>
+						Вызвать мастера
+					</button></a>
 				</div>
 			</div>
 		</div>
@@ -282,10 +295,10 @@
 	<section class="reviews">
 		<div class="container">
 			<div class="title animate__animated wow animate__fadeInDown" data-wow-duration="1s">
-				<h2>Reviews</h2>
+				<h2>Отзывы</h2>
 			</div>
-			<div class="reviews__inner your-class">
-				<div class="reviews__item animate__animated wow animate__slideInLeft" data-wow-duration="2s">
+			<div class="reviews__inner your-class animate__animated wow animate__jackInTheBox" data-wow-duration="2s">
+				<div class="reviews__item" >
 					<div class="reviews__name-data">
 						<div class="reviews__name">
 							Anna
@@ -300,62 +313,60 @@
 						similique provident odit.
 					</div>
 				</div>
-				<div class="reviews__item animate__animated wow animate__slideInRight" data-wow-duration="2s">
+				<div class="reviews__item">
 					<div class="reviews__name-data">
 						<div class="reviews__name">
 							Nikita
 						</div>
 						<div class="reviews__data">
-							26 Avg 2020
+							28 Avg 2020
 						</div>
 					</div>
 					<div class="reviews__text">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quod, nihil dolore praesentium eos
-						assumenda. Voluptatibus dicta harum error excepturi, nemo, nihil in, molestias rerum vel, iste
-						similique provident odit.
+						assumenda. Voluptatibus dicta harum error excepturi, 
 					</div>
 				</div>
-				<div class="reviews__item animate__animated wow animate__slideInLeft" data-wow-duration="2s">
+				<div class="reviews__item ">
 					<div class="reviews__name-data">
 						<div class="reviews__name">
 							Sasha
 						</div>
 						<div class="reviews__data">
-							26 Avg 2020
+							30 Avg 2020
 						</div>
 					</div>
 					<div class="reviews__text">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quod, nihil dolore praesentium eos
-						assumenda. Voluptatibus dicta harum error excepturi, nemo, nihil in, molestias rerum vel, iste
-						similique provident odit.
+						assumenda. Voluptatibus dicta harum error excepturi, nemo,  provident odit.
 					</div>
 				</div>
-				<div class="reviews__item animate__animated wow animate__slideInLeft" data-wow-duration="2s">
+				<div class="reviews__item">
 					<div class="reviews__name-data">
 						<div class="reviews__name">
 							Albert
 						</div>
 						<div class="reviews__data">
-							26 Avg 2020
+							1 Sen 2020
 						</div>
 					</div>
 					<div class="reviews__text">
 						Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quod, nihil dolore praesentium eos
 						assumenda. Voluptatibus dicta harum error excepturi, nemo, nihil in, molestias rerum vel, iste
-						similique provident odit.
+						
 					</div>
 				</div>
 			</div>
 			<div class="reviews__btn animate__animated wow animate__zoomIn">
-				<button>Оставить отзыв</button>
-				<button>Смотреть все отзыв</button>
+				<a href="#popup__modal"><button>Оставить отзыв</button></a>
+				<a href="#"><button>Смотреть все отзыв</button></a>
 			</div>
 		</div>
 	</section>
-	<section class="checkout">
+	<section class="checkout" id="contact">
 		<div class="container">
 			<div class="title">
-				<h2>Checkout</h2>
+				<h2>Контакты</h2>
 			</div>
 			<div class="checkout__inner">
 				<div class="checkout__item">
@@ -367,12 +378,12 @@
 								data-wow-duration="2s">
 						</div>
 						<div class="checkout__textarea animate__animated wow animate__zoomIn">
-							<textarea name="" id="" cols="30" rows="10" placeholder="Write Massage"
+							<textarea class="checkout__comment" name="" id="" cols="30" rows="10" placeholder="Write Massage"
 								data-wow-duration="2s"></textarea>
 						</div>
 						<div class="checkout__btn animate__animated wow animate__slideInUp" data-wow-duration="2s">
 							<a href="#">
-								<button>Send</button>
+								<button>Отправить</button>
 							</a>
 						</div>
 					</form>
@@ -385,7 +396,9 @@
 			<div class="footer__inner">
 				<div class="footer__item">
 					<div class="footer__logo">
-						<img src="img/logo.png" alt="">
+					<a href="index.html">
+						<img src="img/Logo2.png" width="150" height="150" alt="">
+					</a>
 						<div class="footer__link">
 							<a href="email">yusupov@gmail.com</a>
 							<a href="tel:+998901682271">+998901682271</a>
@@ -394,7 +407,7 @@
 					</div>
 					<div class="footer__contact">
 						<a class="footer__tel" href="tel:+998901682271">Call to me</a>
-						<button class="footer__btn">Оставить заявку</button>
+						<a href="#popup__modal__header"><button class="footer__btn">Оставить заявку</button></a>
 					</div>
 				</div>
 			</div>
@@ -409,6 +422,96 @@
 			<div class="popup__content">
 				<a href="#aim" class="close-popup popup__close">x</a>
 				<img src="img/foto.jpg" alt="">
+			</div>
+		</div>
+	</div>
+	<div class="popup" id="popup__modal">
+		<a href="#aim" class="popup__area"></a>
+		<div class="popup__body">
+			<div class="popup__content modal__content">
+				<a href="#aim" class="close-popup popup__close">x</a>
+				<div class="modal__content">
+					<h2 class="modal__text">Отправьте отзыв</h2>
+					<div class="modal__form">
+						<form action="#">
+						<div class="modal__input">
+							<input type="text" placeholder="Ваше Имя">
+						</div>
+
+						<div class="modal__input">
+							<input type="text" placeholder="Ваше Адрес">
+						</div>
+						<div class="modal__textarea">
+							<textarea class="modal__comment" name="" id="" cols="30" rows="10" placeholder="Write Massage"></textarea>
+						</div>
+						<div class="modal__btn">
+							<a href="#"><button>Отправить</button></a>
+						</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup" id="popup__modal__team">
+		<a href="#aim" class="popup__area"></a>
+		<div class="popup__body">
+			<div class="popup__content modal__content">
+				<a href="#aim" class="close-popup popup__close">x</a>
+				<div class="modal__content">
+					<h2 class="modal__text">Вызвать мастера</h2>
+					<div class="modal__form__team">
+						<form action="#">
+						<div class="modal__input">
+							<input type="text" placeholder="Ваше Имя">
+						</div>
+
+						<div class="modal__input">
+							<input type="text" placeholder="Ваше номер">
+						</div>
+						<div class="modal__textarea">
+							<textarea class="modal__comment" name="" id="" cols="30" rows="10" placeholder="Опишите кратко Вашу проблему"></textarea>
+						</div>
+						<div class="modal__btn">
+							<a href="#"><button>Отправить</button></a>
+						</div>
+						<div class="modal__text-problem">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iste, labore ut quod fugit eum. Pariatur veniam ex a iste.</p>
+						</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="popup" id="popup__modal__header">
+		<a href="#aim" class="popup__area"></a>
+		<div class="popup__body">
+			<div class="popup__content modal__content">
+				<a href="#aim" class="close-popup popup__close">x</a>
+				<div class="modal__content">
+					<h2 class="modal__text">Оформить заказ</h2>
+					<div class="modal__form__team">
+						<form action="#">
+						<div class="modal__input">
+							<input type="text" placeholder="Ваше Имя">
+						</div>
+
+						<div class="modal__input">
+							<input type="text" placeholder="Ваше номер">
+						</div>
+						<div class="modal__textarea">
+							<textarea class="modal__comment" name="" id="" cols="30" rows="10" placeholder="Опишите кратко Вашу проблему"></textarea>
+						</div>
+						<div class="modal__btn">
+							<a href="#"><button>Отправить</button></a>
+						</div>
+						<div class="modal__text-problem">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui iste, labore ut quod fugit eum. Pariatur veniam ex a iste.</p>
+						</div>
+						</form>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
