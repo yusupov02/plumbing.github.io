@@ -18,18 +18,18 @@
 	.works__inner {
 		flex-direction: column;
 	}
-
-	.works__item {
-		width: 100%;
+	
+	.works__item  {
+		width: 50%;
 		margin: 0 auto;
 		margin-bottom: 10px;
-		text-decoration: none;
 	}
 
 	.advantages__item {
 		width: 50%;
 		margin-bottom: 50px;
 	}
+
 	.advantages__inner {
 		flex-direction: column;
 		align-items: center;
@@ -39,6 +39,7 @@
 	.about {
 		padding-top: 0;
 	}
+
 	.about__form {
 		margin: 0 auto;
 		width: 100%;
@@ -57,23 +58,29 @@
 	.about__btn {
 		text-align: center;
 	}
+
 	.reviews__item {
 		width: 100%;
 		margin-bottom: 20px;
 		overflow: hidden;
 	}
+
 	.reviews__item:last-child {
 		margin-right: 15px;
 	}
+
 	.reviews__inner {
 		flex-direction: column;
 	}
+
 	.checkout__input {
 		flex-direction: column;
 	}
+
 	.checkout__btn {
 		text-align: center;
 	}
+	
 }
 @media (max-width: 800px) {
 	.header {
@@ -105,16 +112,28 @@
 		width: 100%;
 	}
 }
+
+@media (max-width: 650px) {
+	.header__inner {
+		padding: 0;
+	}
+}
+
 @media (max-width: 600px) {
 	.modal-content {
 		width: 100%;
 	}
-}
-@media (max-width: 600px) {
+
 	.team__item {
 		width: 100%;
 	}
+
+	.works__item {
+		width: 100%;
+	}
+
 }
+
 @media (max-width: 500px) {
 	.intro {
 		margin-top: 100px;
@@ -128,35 +147,32 @@
 		font-size: 16px;
 		padding-top: 10px;
 	}
+
 	.reviews__btn {
 		flex-direction: column;
 		align-items: center;
 	}
+
 	.reviews__btn button {
 		margin-bottom: 20px;
 	}
-	.reviews__btn button:last-child {
-		margin-right: 20px;
-	}
+
 	.footer__item {
 		flex-direction: column;
 	}
+
 	.footer__logo {
 		text-align: center;
 		margin-bottom: 20px;
 	}
+
+	.reviews__btn a  {
+		margin-right: 0;
+	}
 }
+
 @media (max-width: 400px) {
 	.about__input input {
 		width: 245px;
 	}
-}
-.works__item {
-	width: 30%;
-	text-decoration: none;
-	overflow: hidden;
-	position: relative;
-	display: inline-block;
-	line-height: 0;
-	margin-bottom: 20px;
 }
