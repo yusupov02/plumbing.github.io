@@ -169,10 +169,43 @@
 	.reviews__btn a  {
 		margin-right: 0;
 	}
+	.popup__content {
+		max-width: 400px;
+	}
+	.modal__input input {
+		width: 300px;
+
+	}
+	.modal__textarea textarea {
+		width: 300px;
+	}
+	.modal__text-problem  {
+		width: 300px;
+	}
+	.modal__btn {
+		text-align: center;
+	} 
 }
 
 @media (max-width: 400px) {
 	.about__input input {
 		width: 245px;
 	}
+	.popup__content {
+		max-width: 300px;
+	}
+	.modal__input input {
+		width: 200px;
+
+	}
+	.modal__textarea textarea {
+		width: 200px;
+	}
+	.modal__text-problem  {
+		width: 200px;
+	}
+	.modal__btn {
+		text-align: center;
+	}  
+
 }
