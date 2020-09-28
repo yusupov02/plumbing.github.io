@@ -796,7 +796,7 @@ textarea:focus {
 	border: 0;
 }
 
-.modal__textarea, textarea {
+.modal__textarea textarea {
 	margin-bottom: 15px;
 	resize: none;
 	width: 350px;
